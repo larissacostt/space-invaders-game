@@ -1,6 +1,0 @@
-/**
- * Nave
- */
-public class Nave {
-
-}
