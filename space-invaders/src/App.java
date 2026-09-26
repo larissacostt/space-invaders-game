@@ -5,18 +5,15 @@ public class App {
         JFrame janela = new JFrame ("Space Invaders");
         
         janela.setSize(1366, 738);
-        janela.setLocationRelativeTo(janela);
-        janela.setLayout(null); // 
+        janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        janela.setLocationRelativeTo(null); // 
+        
         SpaceInvaders invasaoAliegena = new SpaceInvaders();
-        invasaoAliegena.setBounds(0, 0, 1366, 768);
 
         janela.add(invasaoAliegena);
 
         janela.setVisible(true);
 
-
-        
-       
     }
 }
 
