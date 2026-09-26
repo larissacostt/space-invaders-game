@@ -10,8 +10,10 @@ public class Inimigo {
     private BufferedImage desenho;
     private int x;
     private int y;
+    private int velocidade;
+    private int direcao;
 
-    public Inimigo(int inicioX, int inicioY){
+    public Inimigo(int inicioX, int inicioY, int direcao){
         try{
             desenho = ImageIO.read(
                 getClass().getResource("/imagens/inimigo.png")
@@ -25,19 +27,29 @@ public class Inimigo {
         }
         this.x = inicioX;
         this.y= inicioY;
+        this.direcao= direcao;
+        this.velocidade = 2;
 
     }
 
     public void atualizar(){
-        x++;
-        if(x > 1365){
-            x = 0;
-        }
+        x += velocidade * direcao;
+    }
+
+    public void trocarDirecao(){
+
+        direcao = direcao * -1;
+    }
+
+    public int getX(){
+        return x;
     }
     
     public void pintar(Graphics2D g){
         g.drawImage(desenho, x, y, x + 50, y + 50, 0, 0, desenho.getWidth(), desenho.getHeight(), null);
 
     }
+
+
     
 }
