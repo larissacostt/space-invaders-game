@@ -8,6 +8,9 @@ public class Nave {
 
     private BufferedImage desenho;
     private int x;
+    private int velocidade;
+    private boolean podeAtirar;
+    private int tempo;
 
     public Nave(){
         
@@ -24,16 +27,38 @@ public class Nave {
         }
 
         x = 683;
+        velocidade = 3;
+        podeAtirar = true;
+        tempo = 0;
     }
 
     public void pintar(Graphics2D g) {
         if(desenho != null){
-            g.drawImage(desenho, 350, 480, 100, 100, null);
+            g.drawImage(desenho, x, 580, 100, 100, null);
         }
     }
 
-    public void movimento(int valor){
-        
+    public Tiro atirar(){
+        podeAtirar = false;
+        Tiro novoTiro = new Tiro (x + 49, 550);
+        return novoTiro;
+    }
+
+    public void movimenta(int valor) {
+        if(valor == 1){
+            x+= velocidade;
+        } else if(valor == -1){
+            x-= velocidade;
+        }
+
+        if(tempo >= 10){
+            podeAtirar = true;
+            tempo =0;
+        }
+        tempo++;
+    }
+    public boolean podeAtirar(){
+        return podeAtirar;
     }
 
 }

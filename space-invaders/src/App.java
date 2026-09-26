@@ -12,6 +12,9 @@ public class App {
 
         janela.add(invasaoAliegena);
 
+        invasaoAliegena.setFocusable(true);
+        invasaoAliegena.addKeyListener(invasaoAliegena);
+
         janela.setVisible(true);
 
     }
