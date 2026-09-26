@@ -1,3 +1,4 @@
+package game;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -26,7 +27,7 @@ public class Nave {
             e.printStackTrace();
         }
 
-        x = 683;
+        x = 350;
         velocidade = 3;
         podeAtirar = true;
         tempo = 0;
@@ -34,13 +35,13 @@ public class Nave {
 
     public void pintar(Graphics2D g) {
         if(desenho != null){
-            g.drawImage(desenho, x, 580, 100, 100, null);
+            g.drawImage(desenho, x, 500, 100, 100, null);
         }
     }
 
     public Tiro atirar(){
         podeAtirar = false;
-        Tiro novoTiro = new Tiro (x + 49, 550);
+        Tiro novoTiro = new Tiro (x + 49, 495);
         return novoTiro;
     }
 
@@ -51,10 +52,11 @@ public class Nave {
             x-= velocidade;
         }
 
-        if(tempo >= 10){
+        if(tempo >= 5){
             podeAtirar = true;
-            tempo =0;
+            tempo = 0;
         }
+
         tempo++;
     }
     public boolean podeAtirar(){
