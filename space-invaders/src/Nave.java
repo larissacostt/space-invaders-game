@@ -1,0 +1,6 @@
+/**
+ * Nave
+ */
+public class Nave {
+
+}
