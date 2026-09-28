@@ -19,7 +19,6 @@ O jogador controla uma nave espacial que enfrenta inimigos alienígenas. O objet
 ## ✨ Funcionalidades
 
 - [x] Criação da janela do jogo.
-- [x] Renderização da nave do jogador.
 - [x] Movimentação da nave.
 - [x] Criação e movimentação dos inimigos.
 - [x] Sistema de disparos.
@@ -44,4 +43,4 @@ Localize a classe App.java e execute o método main().
 
 ## 📚 Objetivo acadêmico
 
-Este projeto foi desenvolvido como uma oportunidade de colocar em prática os conhecimentos adquiridos em Java e Programação Orientada a Objetos na disciplina Programa II
+Este projeto foi desenvolvido como uma oportunidade de colocar em prática os conhecimentos adquiridos em Java e Programação Orientada a Objetos na disciplina Programação II.
