@@ -1,18 +1,47 @@
-## Getting Started
+# 👾 Space Invaders
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Um jogo 2D inspirado no clássico **Space Invaders**, desenvolvido em Java utilizando Swing e AWT.
 
-## Folder Structure
+O projeto foi criado com o objetivo de praticar lógica de programação, Programação Orientada a Objetos (POO), manipulação de eventos e desenvolvimento de interfaces gráficas em Java.
 
-The workspace contains two folders by default, where:
+## 🎮 Sobre o jogo
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+O jogador controla uma nave espacial que enfrenta inimigos alienígenas. O objetivo é disparar contra eles e impedir que avancem até a nave.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🕹️ Controles
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+| Tecla | Ação |
+|---|---|
+| `A` | Movimentar a nave para a esquerda |
+| `D` | Movimentar a nave para a direita |
+| `Espaço` | Atirar |
 
-## Dependency Management
+## ✨ Funcionalidades
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- [x] Criação da janela do jogo.
+- [x] Renderização da nave do jogador.
+- [x] Movimentação da nave.
+- [x] Criação e movimentação dos inimigos.
+- [x] Sistema de disparos.
+- [x] Detecção de colisões.
+
+## ▶️ Como executar o projeto
+
+# Pré-requisitos
+- Java JDK 21 ou superior.
+- IDE de sua preferência (IntelliJ IDEA, Eclipse ou VS Code).
+1. Clone o repositório
+`git clone` https://github.com/larissacostt/space-invaders-game.git
+
+2. Acesse a pasta do projeto
+`cd space-invaders-game`
+
+3. Abra o projeto na sua IDE
+Importe a pasta do projeto e verifique se o JDK está configurado corretamente.
+
+4. Execute a aplicação
+Localize a classe App.java e execute o método main().
+
+## 📚 Objetivo acadêmico
+
+Este projeto foi desenvolvido como uma oportunidade de colocar em prática os conhecimentos adquiridos em Java e Programação Orientada a Objetos na disciplina Programa II
